@@ -1,0 +1,54 @@
+.mainContainer-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logoContainer-navbar img {
+  height: 4em;
+  width: 5em;
+}
+
+.logoContainer-navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 0.4rem;
+  padding-right: 1rem;
+}
+
+.loginContainer-navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbarItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-list li:hover #nav-icon {
+  transform: rotate(-90deg);
+  color: yellow;
+}
+
+#nav-icon {
+  font-size: 1.2rem;
+  transition: all 0.5s !important;
+}
+
+
+.navbarItem:hover{
+  color: rgb(132, 9, 9);
+}
+
+.navbarItem  span {
+  transition: all 0.5s;
+} 

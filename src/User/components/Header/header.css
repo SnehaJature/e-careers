@@ -1,0 +1,26 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1rem 4rem;
+  font-size: 0.9rem;
+}
+.social-media-icon-container{
+    display: flex;
+    gap: 0.5rem;
+}
+.social-media-icon-container svg{
+    color: var(--yellow);
+    font-size: 1.2rem;
+    background-color: #eaf9fd
+}
+
+.header-container :nth-child(1){
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media-icon-container div{
+    background-color: #eaf9fd;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
