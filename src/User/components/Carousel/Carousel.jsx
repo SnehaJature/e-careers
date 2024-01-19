@@ -29,7 +29,6 @@ function Carousel() {
     <>
       <div className="carousel-slider" style={{ position: "relative" }}>
         <div className="carousel-item-contanier">
-          {/* map image from image array */}
           {carouselImgs.map((val, ind) => (
             <img
               key={ind}
@@ -44,7 +43,6 @@ function Carousel() {
           <ArrowBackIosNewOutlinedIcon />
         </button>
 
-        
         <button onClick={toggleNext} id="carousal-nav-btns" style={{ right: 0 }}>
           <ArrowForwardIosOutlinedIcon />
         </button>
@@ -52,8 +50,7 @@ function Carousel() {
         <div className="indicator-btn-container">
           {carouselImgs.map((_, ind) => (
             <button key={ind} className="indicator-btn">
-              {/* <RadioButtonCheckedOutlinedIcon /> */}
-              {ind}
+              <RadioButtonCheckedOutlinedIcon />
             </button>
           ))}
         </div>
