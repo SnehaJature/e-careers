@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar, Header, Container } from "./components";
+import { NavBar, Header, Container,Carousel } from "./components";
 
 function UserIndex() {
   return (
@@ -8,6 +8,7 @@ function UserIndex() {
       <hr />
       <Container>
         <NavBar />
+        <Carousel/>
       </Container>
     </>
   );

@@ -6,6 +6,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
+import RadioButtonCheckedOutlinedIcon from '@mui/icons-material/RadioButtonCheckedOutlined';
 
 export {
     LanguageIcon,
@@ -15,5 +18,8 @@ export {
     FacebookIcon,
     InstagramIcon,
     YouTubeIcon,
-    EmailOutlinedIcon
+    EmailOutlinedIcon,
+    ArrowBackIosNewOutlinedIcon,
+    ArrowForwardIosOutlinedIcon,
+    RadioButtonCheckedOutlinedIcon
 }

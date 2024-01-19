@@ -1,0 +1,40 @@
+.carousel-img {
+  flex: 0 0 100%;
+  transition: all 500ms;
+}
+.carousel-item-contanier {
+  display: flex;
+  height: 78vh;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.carousel-slider #carousal-nav-btns {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  /* background-color: aqua; */
+}
+
+#carousal-nav-btns svg {
+  background-color: transparent;
+}
+
+.carousel-slider :hover svg {
+  animation: squish 400ms ease-in-out;
+}
+
+.carousel-slider :hover  {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@keyframes squish {
+  50% {
+    scale: 1.3;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import LogoImg from "../../assets/logo.png";
+import {logo} from "../../images"
 import NavbarItem from "./NavbarItem";
 import {
   LanguageIcon,
@@ -13,7 +13,7 @@ function NavBar() {
     <>
       <nav className="mainContainer-navbar">
         <div className="logoContainer-navbar">
-          <img src={LogoImg} alt="" />
+          <img src={logo} alt="" />
           <h1>E-Careers</h1>
         </div>
 
