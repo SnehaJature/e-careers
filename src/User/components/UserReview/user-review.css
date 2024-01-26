@@ -1,0 +1,81 @@
+.user-review-container {
+  display: flex;
+  padding-inline: 3rem;
+  margin-top: 5rem;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.review-user-profile {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.review-user-profile img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.review-user-profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.review-container {
+  padding-block: 2rem;
+  position: relative;
+}
+.review-img {
+  display: flex;
+  width: 50%;
+  position: relative;
+  gap: 1rem;
+}
+.review-img img {
+  width: 50%;
+  border-radius: 1rem;
+}
+.review-container h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.review-carousel {
+  transition: all ease-in-out 3s;
+  width: 40vw;
+  background-color: crimson;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-box {
+  flex-shrink: 0;
+  width: 40vw;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
+  transition: all ease-in-out 1s;
+}
+
+.review-carousel-indicator-btns button {
+    z-index: 2;
+    width: 2.5rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+.review-carousel-indicator-btns {
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, -100%);
+}
+
+.active-review-indicator-btn {
+  background-color: var(--primary);
+}
+
+.inactive-review-indicator-btn{
+    background-color: var(--primary-light);
+}

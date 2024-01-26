@@ -20,8 +20,9 @@ function NavBar() {
         <ol className="navigation-list">
           <li>
             <NavbarItem
+              
               itemName={"Hello"}
-              icon={<AddIcon id="nav-icon" style={{ fontSize: 20 }} />}
+              icon={<AddIcon name="0" id="nav-icon" style={{ fontSize: 20 }} />}
             />
           </li>
           <li>

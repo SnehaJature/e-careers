@@ -1,0 +1,54 @@
+.counter-bg {
+  height: 45vh;
+  margin-top: 5rem;
+  background: url("../../assets/counter-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  /* opacity: 0.7; */
+}
+.counter-container {
+  background-color: var(--primary);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.counter-container * {
+  background-color: transparent;
+}
+.arrows-container {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.counter-card div::after{
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    padding: .2rem;
+    z-index: -1;
+
+}
+.counter-card{
+    position: relative;
+}
+
+
+

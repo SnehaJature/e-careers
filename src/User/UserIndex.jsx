@@ -1,5 +1,11 @@
 import React from "react";
-import { NavBar, Header, Container,Carousel } from "./components";
+import { NavBar, Header, Container } from "./components";
+import {
+  Outlet,
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 
 function UserIndex() {
   return (
@@ -8,7 +14,7 @@ function UserIndex() {
       <hr />
       <Container>
         <NavBar />
-        <Carousel/>
+        <Outlet />
       </Container>
     </>
   );

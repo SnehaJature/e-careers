@@ -1,8 +1,9 @@
 .mainContainer-navbar {
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-block: 0.5rem;
+  justify-content: center;
+  gap: 10rem;
 }
 .navigation-list {
   list-style: none;

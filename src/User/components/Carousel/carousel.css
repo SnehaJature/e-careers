@@ -1,6 +1,6 @@
 .carousel-img {
   flex: 0 0 100%;
-  transition: all 500ms;
+  transition: all 200ms ease-in-out;
 }
 .carousel-item-contanier {
   display: flex;
@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 0.5rem;
-  /* z-index: -1; */
+  transition: all 200ms ease-in-out;
 }
 .carousel-slider #carousal-nav-btns {
   all: unset;
@@ -18,29 +18,39 @@
   bottom: 0;
   border-radius: 1rem;
   padding: 1rem 1rem;
-  /* background-color: aqua; */
-  transition: all 200ms;
 }
-
 #carousal-nav-btns svg {
   background-color: transparent;
-
 }
-
-.carousel-slider :hover svg {
+.carousel-slider #carousal-nav-btns :hover svg {
   animation: squish 400ms ease-in-out;
-}
-
-.carousel-slider #carousal-nav-btns:hover {
-  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-
-  
 }
-
+.carousel-slider #carousal-nav-btns:hover  {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 @keyframes squish {
   50% {
     scale: 1.3;
   }
 }
+.indicator-btn-container{
+  transform: translateY(-100%);
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  left: 50%;
+}
+
+.indicator-btn-container .indicator-btn{
+  all: unset;
+  margin-inline: .2rem;
+  background-color: transparent;
+}
+
+.indicator-btn svg{
+  background-color: transparent;
+}
+
 

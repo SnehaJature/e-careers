@@ -1,14 +1,34 @@
-import { useState } from 'react'
-import './App.css'
-import UserIndex from './User/userIndex'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./App.css";
+import UserIndex from "./User/userIndex";
+import { HomePage, Jobs } from "./User/pages/index";
 function App() {
-  const [count, setCount] = useState(0)
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <UserIndex />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/jobs",
+          element: <Jobs />,
+        },
+      ],
+    },
+    {
+      path: "/admin",
+    },
+  ]);
 
   return (
     <>
-     <UserIndex/>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

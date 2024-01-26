@@ -1,0 +1,39 @@
+.featues-main-container {
+  display: flex;
+  padding-inline: 3rem;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.video-box {
+  background-color: thistle;
+  flex-basis: 60%;
+  /* height: 60vh; */
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.features {
+  background-color: rgba(100, 148, 237, 0.132);
+  display: flex;
+  flex-wrap: wrap;
+  height: 22em;
+  width: 40em;
+  flex-grow: 0;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.features .features-card {
+  background-color: cadetblue;
+  border: solid black 3px;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.features-box h1 {
+  font-size: 3.4rem;
+  letter-spacing: 0;
+}

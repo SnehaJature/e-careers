@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import {
   ArrowBackIosNewOutlinedIcon,
   ArrowForwardIosOutlinedIcon,
-  RadioButtonCheckedOutlinedIcon,
+  RadioButtonCheckedIcon,
+  RadioButtonUncheckedIcon,
 } from "../../../icons";
 
 import { carouselImgs } from "../../images";
@@ -43,16 +44,37 @@ function Carousel() {
           <ArrowBackIosNewOutlinedIcon />
         </button>
 
-        <button onClick={toggleNext} id="carousal-nav-btns" style={{ right: 0 }}>
+        <button
+          onClick={toggleNext}
+          id="carousal-nav-btns"
+          style={{ right: 0 }}
+        >
           <ArrowForwardIosOutlinedIcon />
         </button>
 
         <div className="indicator-btn-container">
-          {carouselImgs.map((_, ind) => (
-            <button key={ind} className="indicator-btn">
-              <RadioButtonCheckedOutlinedIcon />
-            </button>
-          ))}
+          {carouselImgs.map((_, ind) => {
+            return (
+              <button
+                className="indicator-btn"
+                key={ind}
+                onClick={(e) => {
+                  let clickEvent = e.target;
+                  while (clickEvent.tagName !== "BUTTON") {
+                    clickEvent = clickEvent.parentNode;
+                  }
+                  setCarouselIndex(Number(clickEvent.value));
+                }}
+                value={ind}
+              >
+                {ind === carouselIndex ? (
+                  <RadioButtonCheckedIcon />
+                ) : (
+                  <RadioButtonUncheckedIcon />
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
     </>
